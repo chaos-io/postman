@@ -1,0 +1,30 @@
+{
+    "title": "postman.v2-1.FormParameter",
+    "description": "",
+    "type": "object",
+    "properties": {
+        "contentType": {
+            "title": "mojo.core.String",
+            "type": "string"
+        },
+        "description": {
+            "$ref": "#/components/schemas/postman.v2-1.Description"
+        },
+        "disable": {
+            "title": "mojo.core.Bool",
+            "type": "boolean"
+        },
+        "key": {
+            "title": "mojo.core.String",
+            "type": "string"
+        },
+        "type": {
+            "title": "mojo.core.String",
+            "type": "string"
+        },
+        "value": {
+            "title": "mojo.core.String",
+            "type": "string"
+        }
+    }
+}

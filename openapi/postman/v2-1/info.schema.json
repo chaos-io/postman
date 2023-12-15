@@ -1,0 +1,21 @@
+{
+    "title": "postman.v2-1.Info",
+    "description": "",
+    "type": "object",
+    "properties": {
+        "description": {
+            "$ref": "#/components/schemas/postman.v2-1.Description"
+        },
+        "name": {
+            "title": "mojo.core.String",
+            "type": "string"
+        },
+        "schema": {
+            "title": "mojo.core.String",
+            "type": "string"
+        },
+        "version": {
+            "$ref": "#/components/schemas/postman.v2-1.Version"
+        }
+    }
+}

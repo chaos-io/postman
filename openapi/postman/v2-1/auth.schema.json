@@ -1,0 +1,67 @@
+{
+    "title": "postman.v2-1.Auth",
+    "description": "",
+    "type": "object",
+    "properties": {
+        "apikey": {
+            "title": "mojo.core.Array",
+            "type": "array",
+            "items": {
+                "$ref": "#/components/schemas/postman.v2-1.Auth"
+            }
+        },
+        "awsv4": {
+            "title": "mojo.core.Array",
+            "type": "array",
+            "items": {
+                "$ref": "#/components/schemas/postman.v2-1.Auth"
+            }
+        },
+        "basic": {
+            "title": "mojo.core.Array",
+            "type": "array",
+            "items": {
+                "$ref": "#/components/schemas/postman.v2-1.Auth"
+            }
+        },
+        "edgegrid": {
+            "title": "mojo.core.Array",
+            "type": "array",
+            "items": {
+                "$ref": "#/components/schemas/postman.v2-1.Auth"
+            }
+        },
+        "hawk": {
+            "title": "mojo.core.Array",
+            "type": "array",
+            "items": {
+                "$ref": "#/components/schemas/postman.v2-1.Auth"
+            }
+        },
+        "ntlm": {
+            "title": "mojo.core.Array",
+            "type": "array",
+            "items": {
+                "$ref": "#/components/schemas/postman.v2-1.Auth"
+            }
+        },
+        "oauth1": {
+            "title": "mojo.core.Array",
+            "type": "array",
+            "items": {
+                "$ref": "#/components/schemas/postman.v2-1.Auth"
+            }
+        },
+        "oauth2": {
+            "title": "mojo.core.Array",
+            "type": "array",
+            "items": {
+                "$ref": "#/components/schemas/postman.v2-1.Auth"
+            }
+        },
+        "type": {
+            "title": "mojo.core.String",
+            "type": "string"
+        }
+    }
+}

@@ -1,0 +1,47 @@
+{
+    "title": "postman.v2-1.Cookie",
+    "description": "",
+    "type": "object",
+    "properties": {
+        "domain": {
+            "title": "mojo.core.String",
+            "type": "string"
+        },
+        "expires": {
+            "title": "mojo.core.String",
+            "type": "string"
+        },
+        "hostOnly": {
+            "title": "mojo.core.Bool",
+            "type": "boolean"
+        },
+        "httpOnly": {
+            "title": "mojo.core.Bool",
+            "type": "boolean"
+        },
+        "maxAge": {
+            "title": "mojo.core.String",
+            "type": "string"
+        },
+        "name": {
+            "title": "mojo.core.String",
+            "type": "string"
+        },
+        "path": {
+            "title": "mojo.core.String",
+            "type": "string"
+        },
+        "secure": {
+            "title": "mojo.core.Bool",
+            "type": "boolean"
+        },
+        "session": {
+            "title": "mojo.core.Bool",
+            "type": "boolean"
+        },
+        "value": {
+            "title": "mojo.core.String",
+            "type": "string"
+        }
+    }
+}

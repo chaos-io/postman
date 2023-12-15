@@ -1,0 +1,38 @@
+{
+    "title": "postman.v2-1.Variable",
+    "description": "",
+    "type": "object",
+    "properties": {
+        "description": {
+            "$ref": "#/components/schemas/postman.v2-1.Description"
+        },
+        "disable": {
+            "title": "mojo.core.Bool",
+            "type": "boolean"
+        },
+        "id": {
+            "title": "mojo.core.String",
+            "type": "string"
+        },
+        "key": {
+            "title": "mojo.core.String",
+            "type": "string"
+        },
+        "name": {
+            "title": "mojo.core.String",
+            "type": "string"
+        },
+        "system": {
+            "title": "mojo.core.Bool",
+            "type": "boolean"
+        },
+        "type": {
+            "title": "mojo.core.String",
+            "type": "string"
+        },
+        "value": {
+            "title": "mojo.core.String",
+            "type": "string"
+        }
+    }
+}

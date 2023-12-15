@@ -1,0 +1,33 @@
+{
+    "title": "postman.v2-1.QueryParam",
+    "description": "",
+    "type": "object",
+    "properties": {
+        "description": {
+            "$ref": "#/components/schemas/postman.v2-1.Description"
+        },
+        "disable": {
+            "title": "mojo.core.Bool",
+            "type": "boolean"
+        },
+        "hash": {
+            "title": "mojo.core.String",
+            "type": "string"
+        },
+        "key": {
+            "title": "mojo.core.String",
+            "type": "string"
+        },
+        "value": {
+            "title": "mojo.core.String",
+            "type": "string"
+        },
+        "variable": {
+            "title": "mojo.core.Array",
+            "type": "array",
+            "items": {
+                "$ref": "#/components/schemas/postman.v2-1.Variable"
+            }
+        }
+    }
+}

@@ -1,0 +1,34 @@
+{
+    "title": "postman.v2-1.Body",
+    "description": "",
+    "type": "object",
+    "properties": {
+        "disable": {
+            "title": "mojo.core.Bool",
+            "type": "boolean"
+        },
+        "file": {
+            "$ref": "#/components/schemas/mojo.core.Object"
+        },
+        "formdata": {
+            "$ref": "#/components/schemas/postman.v2-1.FormParameter"
+        },
+        "graphql": {
+            "$ref": "#/components/schemas/mojo.core.Object"
+        },
+        "mode": {
+            "title": "mojo.core.String",
+            "type": "string"
+        },
+        "options": {
+            "$ref": "#/components/schemas/mojo.core.Object"
+        },
+        "raw": {
+            "title": "mojo.core.String",
+            "type": "string"
+        },
+        "urlencoded": {
+            "$ref": "#/components/schemas/postman.v2-1.UrlEncodedParameter"
+        }
+    }
+}
