@@ -1,0 +1,48 @@
+{
+    "title": "postman.v2.Response",
+    "description": "",
+    "type": "object",
+    "properties": {
+        "body": {
+            "title": "mojo.core.String",
+            "type": "string"
+        },
+        "code": {
+            "title": "mojo.core.Int32",
+            "type": "integer",
+            "format": "Int32"
+        },
+        "cookie": {
+            "title": "mojo.core.Array",
+            "type": "array",
+            "items": {
+                "$ref": "#/components/schemas/postman.v2.Cookie"
+            }
+        },
+        "header": {
+            "title": "mojo.core.Array",
+            "type": "array",
+            "items": {
+                "title": "mojo.core.String",
+                "type": "string"
+            }
+        },
+        "id": {
+            "title": "mojo.core.String",
+            "type": "string"
+        },
+        "originalRequest": {
+            "$ref": "#/components/schemas/postman.v2.Request"
+        },
+        "responseTime": {
+            "$ref": "#/components/schemas/mojo.core.Timestamp"
+        },
+        "status": {
+            "title": "mojo.core.String",
+            "type": "string"
+        },
+        "timings": {
+            "$ref": "#/components/schemas/mojo.core.Object"
+        }
+    }
+}

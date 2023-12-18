@@ -1,0 +1,19 @@
+{
+    "title": "postman.v2.Description",
+    "description": "",
+    "type": "object",
+    "properties": {
+        "content": {
+            "title": "mojo.core.String",
+            "type": "string"
+        },
+        "type": {
+            "title": "mojo.core.String",
+            "type": "string"
+        },
+        "version": {
+            "title": "mojo.core.String",
+            "type": "string"
+        }
+    }
+}

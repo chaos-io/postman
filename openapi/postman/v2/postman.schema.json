@@ -1,0 +1,34 @@
+{
+    "title": "postman.v2.Postman",
+    "description": "",
+    "type": "object",
+    "properties": {
+        "auth": {
+            "$ref": "#/components/schemas/postman.v2.Auth"
+        },
+        "event": {
+            "title": "mojo.core.Array",
+            "type": "array",
+            "items": {
+                "$ref": "#/components/schemas/postman.v2.Event"
+            }
+        },
+        "info": {
+            "$ref": "#/components/schemas/postman.v2.Info"
+        },
+        "item": {
+            "title": "mojo.core.Array",
+            "type": "array",
+            "items": {
+                "$ref": "#/components/schemas/postman.v2.Items"
+            }
+        },
+        "variable": {
+            "title": "mojo.core.Array",
+            "type": "array",
+            "items": {
+                "$ref": "#/components/schemas/postman.v2.Variable"
+            }
+        }
+    }
+}

@@ -1,0 +1,52 @@
+{
+    "title": "postman.v2.Items",
+    "description": "",
+    "type": "object",
+    "properties": {
+        "auth": {
+            "$ref": "#/components/schemas/postman.v2.Auth"
+        },
+        "description": {
+            "$ref": "#/components/schemas/postman.v2.Description"
+        },
+        "event": {
+            "title": "mojo.core.Array",
+            "type": "array",
+            "items": {
+                "$ref": "#/components/schemas/postman.v2.Event"
+            }
+        },
+        "id": {
+            "title": "mojo.core.String",
+            "type": "string"
+        },
+        "item": {
+            "title": "mojo.core.Array",
+            "type": "array",
+            "items": {
+                "$ref": "#/components/schemas/postman.v2.Items"
+            }
+        },
+        "name": {
+            "title": "mojo.core.String",
+            "type": "string"
+        },
+        "request": {
+            "$ref": "#/components/schemas/postman.v2.Request"
+        },
+        "response": {
+            "title": "mojo.core.Array",
+            "type": "array",
+            "items": {
+                "$ref": "#/components/schemas/postman.v2.Response"
+            }
+        },
+        "variable": {
+            "title": "mojo.core.Array",
+            "type": "array",
+            "items": {
+                "$ref": "#/components/schemas/postman.v2.Variable"
+            }
+        }
+    }
+}

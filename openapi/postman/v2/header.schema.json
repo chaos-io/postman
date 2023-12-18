@@ -1,0 +1,22 @@
+{
+    "title": "postman.v2.Header",
+    "description": "",
+    "type": "object",
+    "properties": {
+        "description": {
+            "$ref": "#/components/schemas/postman.v2.Description"
+        },
+        "disable": {
+            "title": "mojo.core.Bool",
+            "type": "boolean"
+        },
+        "key": {
+            "title": "mojo.core.String",
+            "type": "string"
+        },
+        "value": {
+            "title": "mojo.core.String",
+            "type": "string"
+        }
+    }
+}

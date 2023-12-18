@@ -1,0 +1,30 @@
+{
+    "title": "postman.v2.Script",
+    "description": "",
+    "type": "object",
+    "properties": {
+        "exec": {
+            "title": "mojo.core.Array",
+            "type": "array",
+            "items": {
+                "title": "mojo.core.String",
+                "type": "string"
+            }
+        },
+        "id": {
+            "title": "mojo.core.String",
+            "type": "string"
+        },
+        "name": {
+            "title": "mojo.core.String",
+            "type": "string"
+        },
+        "src": {
+            "$ref": "#/components/schemas/postman.v2.Url"
+        },
+        "type": {
+            "title": "mojo.core.String",
+            "type": "string"
+        }
+    }
+}

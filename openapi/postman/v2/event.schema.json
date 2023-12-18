@@ -1,0 +1,22 @@
+{
+    "title": "postman.v2.Event",
+    "description": "",
+    "type": "object",
+    "properties": {
+        "disabled": {
+            "title": "mojo.core.Bool",
+            "type": "boolean"
+        },
+        "id": {
+            "title": "mojo.core.String",
+            "type": "string"
+        },
+        "listen": {
+            "title": "mojo.core.String",
+            "type": "string"
+        },
+        "script": {
+            "$ref": "#/components/schemas/postman.v2.Script"
+        }
+    }
+}

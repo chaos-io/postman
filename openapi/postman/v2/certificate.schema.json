@@ -1,0 +1,29 @@
+{
+    "title": "postman.v2.Certificate",
+    "description": "",
+    "type": "object",
+    "properties": {
+        "cert": {
+            "$ref": "#/components/schemas/mojo.core.Object"
+        },
+        "key": {
+            "$ref": "#/components/schemas/mojo.core.Object"
+        },
+        "matches": {
+            "title": "mojo.core.Array",
+            "type": "array",
+            "items": {
+                "title": "mojo.core.String",
+                "type": "string"
+            }
+        },
+        "name": {
+            "title": "mojo.core.String",
+            "type": "string"
+        },
+        "passphrase": {
+            "title": "mojo.core.String",
+            "type": "string"
+        }
+    }
+}

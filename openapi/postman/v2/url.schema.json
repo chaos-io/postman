@@ -1,0 +1,49 @@
+{
+    "title": "postman.v2.Url",
+    "description": "",
+    "type": "object",
+    "properties": {
+        "hash": {
+            "title": "mojo.core.String",
+            "type": "string"
+        },
+        "host": {
+            "title": "mojo.core.Array",
+            "type": "array",
+            "items": {
+                "title": "mojo.core.String",
+                "type": "string"
+            }
+        },
+        "path": {
+            "title": "mojo.core.Array",
+            "type": "array",
+            "items": {
+                "title": "mojo.core.String",
+                "type": "string"
+            }
+        },
+        "port": {
+            "title": "mojo.core.String",
+            "type": "string"
+        },
+        "protocol": {
+            "title": "mojo.core.String",
+            "type": "string"
+        },
+        "query": {
+            "$ref": "#/components/schemas/postman.v2.QueryParam"
+        },
+        "raw": {
+            "title": "mojo.core.String",
+            "type": "string"
+        },
+        "variable": {
+            "title": "mojo.core.Array",
+            "type": "array",
+            "items": {
+                "$ref": "#/components/schemas/postman.v2.Variable"
+            }
+        }
+    }
+}
