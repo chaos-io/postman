@@ -1,5 +1,5 @@
 {
-    "title": "postman.v2.Certificate",
+    "title": "postman.v2.Request.Certificate",
     "description": "",
     "type": "object",
     "properties": {

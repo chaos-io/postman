@@ -1,21 +1,28 @@
 {
     "title": "postman.v2.Info",
-    "description": "",
+    "description": "Detailed description of the info block",
     "type": "object",
     "properties": {
+        "PostmanId": {
+            "title": "mojo.core.String",
+            "description": "Every collection is identified by the unique value of this field.\nThe value of this field is usually easiest to generate using a UID generator function.\nIf you already have a collection, it is recommended that you maintain the same id\nsince changing the id usually implies that is a different collection than it was originally.\n\nNote: This field exists for compatibility reasons with Collection Format V1.",
+            "type": "string"
+        },
         "description": {
             "$ref": "#/components/schemas/postman.v2.Description"
         },
         "name": {
             "title": "mojo.core.String",
+            "description": "A collection's friendly name is defined by this field.\nYou would want to set this field to a value that would allow you to easily identify\nthis collection among a bunch of other collections, as such outlining its usage or content.",
             "type": "string"
         },
         "schema": {
             "title": "mojo.core.String",
+            "description": "This should ideally hold a link to the Postman schema that is used to validate this collection.\nE.g: https://schema.getpostman.com/collection/v1",
             "type": "string"
         },
         "version": {
-            "$ref": "#/components/schemas/postman.v2.Version"
+            "$ref": "#/components/schemas/mojo.core.Version"
         }
     }
 }

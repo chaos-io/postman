@@ -3,9 +3,6 @@
     "description": "",
     "type": "object",
     "properties": {
-        "auth": {
-            "$ref": "#/components/schemas/postman.v2.Auth"
-        },
         "event": {
             "title": "mojo.core.Array",
             "type": "array",
@@ -18,9 +15,10 @@
         },
         "item": {
             "title": "mojo.core.Array",
+            "description": "Items are the basic unit for a Postman collection.\nYou can think of them as corresponding to a single API endpoint.\nEach Item has one request and may have multiple API responses associated with it.",
             "type": "array",
             "items": {
-                "$ref": "#/components/schemas/postman.v2.Items"
+                "$ref": "#/components/schemas/postman.v2.Item"
             }
         },
         "variable": {

@@ -1,23 +1,25 @@
 {
-    "title": "postman.v2.Body",
+    "title": "postman.v2.Request.Body",
     "description": "",
     "type": "object",
     "properties": {
         "disable": {
             "title": "mojo.core.Bool",
+            "description": "When set to true, prevents request body from being sent",
             "type": "boolean"
         },
         "file": {
-            "$ref": "#/components/schemas/mojo.core.Object"
+            "$ref": "#/components/schemas/postman.v2.Request.File"
         },
         "formdata": {
-            "$ref": "#/components/schemas/postman.v2.FormParameter"
+            "$ref": "#/components/schemas/postman.v2.Request.FormParameter"
         },
         "graphql": {
             "$ref": "#/components/schemas/mojo.core.Object"
         },
         "mode": {
             "title": "mojo.core.String",
+            "description": "Postman stores the type of data associated with this request in this field\nraw urlencoded formdata file graphql",
             "type": "string"
         },
         "options": {
@@ -28,7 +30,7 @@
             "type": "string"
         },
         "urlencoded": {
-            "$ref": "#/components/schemas/postman.v2.UrlEncodedParameter"
+            "$ref": "#/components/schemas/postman.v2.Request.UrlEncodedParameter"
         }
     }
 }

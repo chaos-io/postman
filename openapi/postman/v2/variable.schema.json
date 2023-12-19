@@ -1,6 +1,6 @@
 {
     "title": "postman.v2.Variable",
-    "description": "",
+    "description": "Using variables in your Postman requests eliminates the need to duplicate requests,\nwhich can save a lot of time. Variables can be defined, and referenced to from any part of a request.",
     "type": "object",
     "properties": {
         "description": {
@@ -12,26 +12,32 @@
         },
         "id": {
             "title": "mojo.core.String",
+            "description": "A variable ID is a unique user-defined value that identifies the variable\nwithin a collection. In traditional terms, this would be a variable name.",
             "type": "string"
         },
         "key": {
             "title": "mojo.core.String",
+            "description": "A variable key is a human friendly value that identifies the variable within\na collection. In traditional terms, this would be a variable name.",
             "type": "string"
         },
         "name": {
             "title": "mojo.core.String",
+            "description": "Variable name",
             "type": "string"
         },
         "system": {
             "title": "mojo.core.Bool",
+            "description": "When set to true, indicates that this variable has been set by Postman",
             "type": "boolean"
         },
         "type": {
             "title": "mojo.core.String",
+            "description": "A variable may have multiple types. This field specifies the type of the variable",
             "type": "string"
         },
         "value": {
             "title": "mojo.core.String",
+            "description": "The value that a variable holds in this collection. Ultimately, the variables\nwill be replaced by this value, when say running a set of requests from a collection",
             "type": "string"
         }
     }

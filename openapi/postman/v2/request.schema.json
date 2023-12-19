@@ -3,35 +3,29 @@
     "description": "",
     "type": "object",
     "properties": {
-        "auth": {
-            "$ref": "#/components/schemas/postman.v2.Auth"
-        },
         "body": {
             "title": "mojo.core.Array",
+            "description": "This field contains the data usually contained in the request body.",
             "type": "array",
             "items": {
-                "$ref": "#/components/schemas/postman.v2.Body"
+                "$ref": "#/components/schemas/postman.v2.Request.Body"
             }
-        },
-        "certificate": {
-            "$ref": "#/components/schemas/postman.v2.Certificate"
         },
         "description": {
             "$ref": "#/components/schemas/postman.v2.Description"
         },
         "header": {
             "title": "mojo.core.Array",
+            "description": "A representation for a list of headers",
             "type": "array",
             "items": {
-                "$ref": "#/components/schemas/postman.v2.Header"
+                "$ref": "#/components/schemas/postman.v2.Request.Header"
             }
         },
         "method": {
             "title": "mojo.core.String",
+            "description": "GET PUT POST PATCH DELETE COPY HEAD OPTIONS LINK UNLINK PURGE LOCK UNLOCK PROPFIND VIEW",
             "type": "string"
-        },
-        "proxy": {
-            "$ref": "#/components/schemas/postman.v2.ProxyConfig"
         },
         "url": {
             "title": "mojo.core.Array",

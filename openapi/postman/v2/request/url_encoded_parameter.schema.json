@@ -1,5 +1,5 @@
 {
-    "title": "postman.v2.UrlEncodedParameter",
+    "title": "postman.v2.Request.UrlEncodedParameter",
     "description": "",
     "type": "object",
     "properties": {

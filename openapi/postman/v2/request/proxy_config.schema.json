@@ -1,6 +1,6 @@
 {
-    "title": "postman.v2.ProxyConfig",
-    "description": "",
+    "title": "postman.v2.Request.ProxyConfig",
+    "description": "Using the Proxy, you can configure your custom proxy into the postman for particular url match",
     "type": "object",
     "properties": {
         "disable": {

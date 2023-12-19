@@ -1,16 +1,26 @@
 {
-    "title": "postman.v2.Header",
+    "title": "postman.v2.Request.FormParameter",
     "description": "",
     "type": "object",
     "properties": {
+        "contentType": {
+            "title": "mojo.core.String",
+            "description": "Override Content-Type header of this form data entity.",
+            "type": "string"
+        },
         "description": {
             "$ref": "#/components/schemas/postman.v2.Description"
         },
         "disable": {
             "title": "mojo.core.Bool",
+            "description": "When set to true, prevents this form data entity from being sent.",
             "type": "boolean"
         },
         "key": {
+            "title": "mojo.core.String",
+            "type": "string"
+        },
+        "type": {
             "title": "mojo.core.String",
             "type": "string"
         },

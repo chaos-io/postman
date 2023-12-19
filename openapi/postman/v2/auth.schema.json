@@ -1,10 +1,11 @@
 {
     "title": "postman.v2.Auth",
-    "description": "",
+    "description": "Auth Represents authentication helpers provided by Postman",
     "type": "object",
     "properties": {
         "apikey": {
             "title": "mojo.core.Array",
+            "description": "The attributes for API Key Authentication",
             "type": "array",
             "items": {
                 "$ref": "#/components/schemas/postman.v2.Auth"
@@ -61,6 +62,7 @@
         },
         "type": {
             "title": "mojo.core.String",
+            "description": "enum string apikey awsv4 basic bearer digest edgegrid hawk noauth oauth1 oauth2 ntlm",
             "type": "string"
         }
     }

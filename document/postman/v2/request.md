@@ -1,10 +1,7 @@
 | field | type | format | required | default | description |
 |---|---|---|---|---|---|
-| `auth` | `postman.v2.Auth` |  | N |  |  |
-| `body` | `Array<postman.v2.Body>` |  | N |  |
-| `certificate` | `postman.v2.Certificate` |  | N |  |  |
-| `description` | `postman.v2.Description` |  | N |  |  |
-| `header` | `Array<postman.v2.Header>` |  | N |  |
-| `method` | `string` |  | N |  |
-| `proxy` | `postman.v2.ProxyConfig` |  | N |  |  |
+| `body` | `Array<postman.v2.Request.Body>` |  | N |  | This field contains the data usually contained in the request body. |
+| `description` | `postman.v2.Description` |  | N |  | A Description can be a raw text, or be an object, which holds the description along with its format. |
+| `header` | `Array<postman.v2.Request.Header>` |  | N |  | A representation for a list of headers |
+| `method` | `string` |  | N |  | GET PUT POST PATCH DELETE COPY HEAD OPTIONS LINK UNLINK PURGE LOCK UNLOCK PROPFIND VIEW |
 | `url` | `Array<postman.v2.Url>` |  | N |  |

@@ -5,8 +5,9 @@ syntax = "proto3";
 package postman.v2;
 
 import "postman/v2/Info.proto";
-import "postman/v2/auth.proto";
-import "postman/v2/v2.proto";
+import "postman/v2/event.proto";
+import "postman/v2/item.proto";
+import "postman/v2/variable.proto";
 
 option go_package = "github.com/chaos-io/postman/go/pkg/postman/v2;postman";
 option java_multiple_files = true;
@@ -15,8 +16,7 @@ option java_package = "postman.v2";
 
 message Postman {
     Info info = 1;
-    repeated Items item = 10;
+    repeated Item item = 10;
     repeated Event event = 20;
     repeated Variable variable = 30;
-    Auth auth = 35;
 }

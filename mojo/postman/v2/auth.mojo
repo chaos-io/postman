@@ -1,6 +1,10 @@
 
+/// Auth Represents authentication helpers provided by Postman
 type Auth {
-    type: String @1 // enum string apikey awsv4 basic bearer digest edgegrid hawk noauth oauth1 oauth2 ntlm
+    /// enum string apikey awsv4 basic bearer digest edgegrid hawk noauth oauth1 oauth2 ntlm
+    type: String @1
+
+    /// The attributes for API Key Authentication
     apikey: [Auth] @10
     awsv4: [Auth] @11
     basic: [Auth] @12

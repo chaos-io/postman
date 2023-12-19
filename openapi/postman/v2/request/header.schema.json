@@ -1,12 +1,8 @@
 {
-    "title": "postman.v2.FormParameter",
+    "title": "postman.v2.Request.Header",
     "description": "",
     "type": "object",
     "properties": {
-        "contentType": {
-            "title": "mojo.core.String",
-            "type": "string"
-        },
         "description": {
             "$ref": "#/components/schemas/postman.v2.Description"
         },
@@ -15,10 +11,6 @@
             "type": "boolean"
         },
         "key": {
-            "title": "mojo.core.String",
-            "type": "string"
-        },
-        "type": {
             "title": "mojo.core.String",
             "type": "string"
         },

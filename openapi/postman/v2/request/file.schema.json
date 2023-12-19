@@ -1,0 +1,16 @@
+{
+    "title": "postman.v2.Request.File",
+    "description": "",
+    "type": "object",
+    "properties": {
+        "content": {
+            "title": "mojo.core.String",
+            "type": "string"
+        },
+        "src": {
+            "title": "mojo.core.String",
+            "description": "Contains the name of the file to upload. _Not the path_.\nA null src indicates that no file has been selected as a part of the request body",
+            "type": "string"
+        }
+    }
+}

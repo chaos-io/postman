@@ -1,16 +1,14 @@
 {
-    "title": "postman.v2.Items",
-    "description": "",
+    "title": "postman.v2.Item",
+    "description": "Item are entities which contain an actual HTTP request, and sample responses attached to it.",
     "type": "object",
     "properties": {
-        "auth": {
-            "$ref": "#/components/schemas/postman.v2.Auth"
-        },
         "description": {
             "$ref": "#/components/schemas/postman.v2.Description"
         },
         "event": {
             "title": "mojo.core.Array",
+            "description": "Postman allows you to configure scripts to run when specific events occur.\nThese scripts are stored here, and can be referenced in the collection by their ID.",
             "type": "array",
             "items": {
                 "$ref": "#/components/schemas/postman.v2.Event"
@@ -18,17 +16,19 @@
         },
         "id": {
             "title": "mojo.core.String",
+            "description": "A unique ID that is used to identify collections internally.",
             "type": "string"
         },
         "item": {
             "title": "mojo.core.Array",
             "type": "array",
             "items": {
-                "$ref": "#/components/schemas/postman.v2.Items"
+                "$ref": "#/components/schemas/postman.v2.Item"
             }
         },
         "name": {
             "title": "mojo.core.String",
+            "description": "A human readable identifier for the current item.",
             "type": "string"
         },
         "request": {
@@ -36,6 +36,7 @@
         },
         "response": {
             "title": "mojo.core.Array",
+            "description": "A response represents an HTTP response.",
             "type": "array",
             "items": {
                 "$ref": "#/components/schemas/postman.v2.Response"
@@ -43,10 +44,14 @@
         },
         "variable": {
             "title": "mojo.core.Array",
+            "description": "Collection variables allow you to define a set of variables, that are a part of the collection,\nas opposed to environments, which are separate entities.\n\nNote: Collection variables must not contain any sensitive information.",
             "type": "array",
             "items": {
                 "$ref": "#/components/schemas/postman.v2.Variable"
             }
         }
-    }
+    },
+    "required": [
+        "request"
+    ]
 }

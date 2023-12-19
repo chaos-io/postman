@@ -1,5 +1,5 @@
 {
-    "title": "postman.v2.QueryParam",
+    "title": "postman.v2.Url.QueryParam",
     "description": "",
     "type": "object",
     "properties": {
@@ -8,11 +8,8 @@
         },
         "disable": {
             "title": "mojo.core.Bool",
+            "description": "If set to true, the current query parameter will not be sent with the request",
             "type": "boolean"
-        },
-        "hash": {
-            "title": "mojo.core.String",
-            "type": "string"
         },
         "key": {
             "title": "mojo.core.String",
@@ -21,13 +18,6 @@
         "value": {
             "title": "mojo.core.String",
             "type": "string"
-        },
-        "variable": {
-            "title": "mojo.core.Array",
-            "type": "array",
-            "items": {
-                "$ref": "#/components/schemas/postman.v2.Variable"
-            }
         }
     }
 }

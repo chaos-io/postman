@@ -1,18 +1,21 @@
 {
     "title": "postman.v2.Description",
-    "description": "",
+    "description": "A Description can be a raw text, or be an object, which holds the description along with its format.",
     "type": "object",
     "properties": {
         "content": {
             "title": "mojo.core.String",
+            "description": "The content of the description goes here, as a raw string.",
             "type": "string"
         },
         "type": {
             "title": "mojo.core.String",
+            "description": "Holds the mime type of the raw description content.\nE.g: 'text/markdown' or 'text/html'.\nThe type is used to correctly render the description when generating documentation, or in the Postman app.",
             "type": "string"
         },
         "version": {
             "title": "mojo.core.String",
+            "description": "Description can have versions associated with it, which should be put in this property.",
             "type": "string"
         }
     }
