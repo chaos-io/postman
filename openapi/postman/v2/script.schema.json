@@ -4,12 +4,8 @@
     "type": "object",
     "properties": {
         "exec": {
-            "title": "mojo.core.Array",
-            "type": "array",
-            "items": {
-                "title": "mojo.core.String",
-                "type": "string"
-            }
+            "title": "mojo.core.String",
+            "type": "string"
         },
         "id": {
             "title": "mojo.core.String",

@@ -11,10 +11,10 @@ import "postman/v2/variable.proto";
 
 option go_package = "github.com/chaos-io/postman/go/pkg/postman/v2;postman";
 option java_multiple_files = true;
-option java_outer_classname = "PostmanProto";
+option java_outer_classname = "CollectionProto";
 option java_package = "postman.v2";
 
-message Postman {
+message Collection {
     Info info = 1;
     repeated Item item = 10;
     repeated Event event = 20;

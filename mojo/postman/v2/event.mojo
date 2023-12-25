@@ -9,7 +9,7 @@ type Event {
 type Script {
     id: String @1
     type: String @5
-    exec: [String] @6
+    exec: String @6
     src: Url @10
     name: String @11
 }

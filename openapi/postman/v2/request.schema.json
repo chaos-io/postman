@@ -28,11 +28,7 @@
             "type": "string"
         },
         "url": {
-            "title": "mojo.core.Array",
-            "type": "array",
-            "items": {
-                "$ref": "#/components/schemas/postman.v2.Url"
-            }
+            "$ref": "#/components/schemas/postman.v2.Url"
         }
     }
 }

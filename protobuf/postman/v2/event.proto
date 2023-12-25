@@ -22,7 +22,7 @@ message Event {
 message Script {
     string id = 1;
     string type = 5;
-    repeated string exec = 6;
+    string exec = 6;
     Url src = 10;
     string name = 11;
 }

@@ -69,7 +69,7 @@ message Request {
         string content = 2;
     }
 
-    repeated Url url = 1;
+    Url url = 1;
     string method = 21;
     Description description = 22;
     repeated Header header = 25;

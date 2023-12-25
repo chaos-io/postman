@@ -65,7 +65,8 @@ type Request {
         content: String @2
     }
 
-    url: [Url] @1
+    url: Url @1
+
     //auth: Auth @5
     //proxy: ProxyConfig @10
     //certificate: Certificate @11

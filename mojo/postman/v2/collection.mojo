@@ -1,6 +1,6 @@
 
-// Postman ref: https://schema.postman.com/collection/json/v2.1.0/draft-07/docs/index.html
-type Postman {
+// Collection ref: https://schema.postman.com/collection/json/v2.1.0/draft-07/docs/index.html
+type Collection {
     info: Info @1
 
     /// Items are the basic unit for a Postman collection.
