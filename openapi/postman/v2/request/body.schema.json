@@ -1,6 +1,6 @@
 {
     "title": "postman.v2.Request.Body",
-    "description": "",
+    "description": "Body This field contains the data usually contained in the request body.",
     "type": "object",
     "properties": {
         "disable": {
@@ -30,7 +30,11 @@
             "type": "string"
         },
         "urlencoded": {
-            "$ref": "#/components/schemas/postman.v2.Request.UrlEncodedParameter"
+            "title": "mojo.core.Array",
+            "type": "array",
+            "items": {
+                "$ref": "#/components/schemas/postman.v2.Request.UrlEncodedParameter"
+            }
         }
     }
 }

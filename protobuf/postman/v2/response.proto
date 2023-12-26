@@ -6,6 +6,7 @@ package postman.v2;
 
 import "mojo/core/time.proto";
 import "mojo/core/value.proto";
+import "postman/v2/header.proto";
 import "postman/v2/request.proto";
 
 option go_package = "github.com/chaos-io/postman/go/pkg/postman/v2;postman";
@@ -18,7 +19,7 @@ message Response {
     Request original_request = 10;
     mojo.core.Timestamp response_time = 11;
     mojo.core.Object timings = 12;
-    repeated string header = 20;
+    repeated Header header = 20;
     string body = 22;
     string status = 30;
     int32 code = 31;

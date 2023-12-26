@@ -5,6 +5,6 @@
 | `path` | `Array<string>` |  | N |  | The complete path of the current url, broken down into segments.A segment could be a string, or a path variable. |
 | `port` | `string` |  | N |  | The port number present in this URL. An empty value implies 80/443depending on whether the protocol field contains http/https. |
 | `protocol` | `string` |  | N |  | The protocol associated with the request, E.g: 'http' |
-| `query` | `postman.v2.Url.QueryParam` |  | N |  | An array of QueryParams, which is basically the query string part of the URL,parsed into separate variables |
+| `query` | `Array<postman.v2.Url.QueryParam>` |  | N |  | An array of QueryParams, which is basically the query string part of the URL,parsed into separate variables |
 | `raw` | `string` |  | N |  | The string representation of the request URL, including the protocol,host, path, hash, query parameter(s) and path variable(s). |
 | `variable` | `Array<postman.v2.Variable>` |  | N |  | Postman supports path variables with the syntax /path/:variableName/to/somewhere.These variables are stored in this field. |

@@ -7,4 +7,4 @@
 | `mode` | `string` |  | N |  | Postman stores the type of data associated with this request in this fieldraw urlencoded formdata file graphql |
 | `options` | `mojo.core.Object` |  | N |  | Additional configurations and options set for various body modes. |
 | `raw` | `string` |  | N |  |
-| `urlencoded` | `postman.v2.Request.UrlEncodedParameter` |  | N |  |  |
+| `urlencoded` | `Array<postman.v2.Request.UrlEncodedParameter>` |  | N |  |

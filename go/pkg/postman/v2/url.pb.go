@@ -27,14 +27,14 @@ type Url struct {
 	sizeCache     protoimpl.SizeCache
 	unknownFields protoimpl.UnknownFields
 
-	Raw      string          `protobuf:"bytes,1,opt,name=raw,proto3" json:"raw,omitempty"`
-	Protocol string          `protobuf:"bytes,10,opt,name=protocol,proto3" json:"protocol,omitempty"`
-	Host     []string        `protobuf:"bytes,15,rep,name=host,proto3" json:"host,omitempty"`
-	Path     []string        `protobuf:"bytes,18,rep,name=path,proto3" json:"path,omitempty"`
-	Port     string          `protobuf:"bytes,20,opt,name=port,proto3" json:"port,omitempty"`
-	Query    *Url_QueryParam `protobuf:"bytes,21,opt,name=query,proto3" json:"query,omitempty"`
-	Hash     string          `protobuf:"bytes,22,opt,name=hash,proto3" json:"hash,omitempty"`
-	Variable []*Variable     `protobuf:"bytes,30,rep,name=variable,proto3" json:"variable,omitempty"`
+	Raw      string            `protobuf:"bytes,1,opt,name=raw,proto3" json:"raw,omitempty"`
+	Protocol string            `protobuf:"bytes,10,opt,name=protocol,proto3" json:"protocol,omitempty"`
+	Host     []string          `protobuf:"bytes,15,rep,name=host,proto3" json:"host,omitempty"`
+	Path     []string          `protobuf:"bytes,18,rep,name=path,proto3" json:"path,omitempty"`
+	Port     string            `protobuf:"bytes,20,opt,name=port,proto3" json:"port,omitempty"`
+	Query    []*Url_QueryParam `protobuf:"bytes,21,rep,name=query,proto3" json:"query,omitempty"`
+	Hash     string            `protobuf:"bytes,22,opt,name=hash,proto3" json:"hash,omitempty"`
+	Variable []*Variable       `protobuf:"bytes,30,rep,name=variable,proto3" json:"variable,omitempty"`
 }
 
 func (x *Url) Reset() {
@@ -104,7 +104,7 @@ func (x *Url) GetPort() string {
 	return ""
 }
 
-func (x *Url) GetQuery() *Url_QueryParam {
+func (x *Url) GetQuery() []*Url_QueryParam {
 	if x != nil {
 		return x.Query
 	}
@@ -212,7 +212,7 @@ var file_postman_v2_url_proto_rawDesc = []byte{
 	0x04, 0x68, 0x6f, 0x73, 0x74, 0x12, 0x12, 0x0a, 0x04, 0x70, 0x61, 0x74, 0x68, 0x18, 0x12, 0x20,
 	0x03, 0x28, 0x09, 0x52, 0x04, 0x70, 0x61, 0x74, 0x68, 0x12, 0x12, 0x0a, 0x04, 0x70, 0x6f, 0x72,
 	0x74, 0x18, 0x14, 0x20, 0x01, 0x28, 0x09, 0x52, 0x04, 0x70, 0x6f, 0x72, 0x74, 0x12, 0x30, 0x0a,
-	0x05, 0x71, 0x75, 0x65, 0x72, 0x79, 0x18, 0x15, 0x20, 0x01, 0x28, 0x0b, 0x32, 0x1a, 0x2e, 0x70,
+	0x05, 0x71, 0x75, 0x65, 0x72, 0x79, 0x18, 0x15, 0x20, 0x03, 0x28, 0x0b, 0x32, 0x1a, 0x2e, 0x70,
 	0x6f, 0x73, 0x74, 0x6d, 0x61, 0x6e, 0x2e, 0x76, 0x32, 0x2e, 0x55, 0x72, 0x6c, 0x2e, 0x51, 0x75,
 	0x65, 0x72, 0x79, 0x50, 0x61, 0x72, 0x61, 0x6d, 0x52, 0x05, 0x71, 0x75, 0x65, 0x72, 0x79, 0x12,
 	0x12, 0x0a, 0x04, 0x68, 0x61, 0x73, 0x68, 0x18, 0x16, 0x20, 0x01, 0x28, 0x09, 0x52, 0x04, 0x68,

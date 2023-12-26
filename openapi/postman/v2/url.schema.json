@@ -37,7 +37,12 @@
             "type": "string"
         },
         "query": {
-            "$ref": "#/components/schemas/postman.v2.Url.QueryParam"
+            "title": "mojo.core.Array",
+            "description": "An array of QueryParams, which is basically the query string part of the URL,\nparsed into separate variables",
+            "type": "array",
+            "items": {
+                "$ref": "#/components/schemas/postman.v2.Url.QueryParam"
+            }
         },
         "raw": {
             "title": "mojo.core.String",

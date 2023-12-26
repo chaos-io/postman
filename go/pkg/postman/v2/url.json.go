@@ -10,44 +10,43 @@ import (
 
 func init() {
 	core.RegisterJSONTypeDecoder("postman.Url_QueryParam", &UrlQueryParamCodec{})
+	core.RegisterJSONTypeEncoder("postman.Url_QueryParam", &UrlQueryParamCodec{})
 }
 
 type UrlQueryParamCodec struct{}
 
 func (codec *UrlQueryParamCodec) Decode(ptr unsafe.Pointer, iter *jsoniter.Iterator) {
 	val := iter.ReadAny()
-	e := (*Url_QueryParam)(ptr)
-
+	param := (*Url_QueryParam)(ptr)
 	switch val.ValueType() {
 	case jsoniter.StringValue:
-		e.Value = val.ToString()
+		param.Value = val.ToString()
 	case jsoniter.ObjectValue:
-		e.Key = val.Get("key").ToString()
-		e.Value = val.Get("value").ToString()
-		e.Disable = val.Get("disable").ToBool()
-		// e.Description = val.Get("description").ToVal()
+		param.Key = val.Get("key").ToString()
+		param.Value = val.Get("value").ToString()
+		param.Disable = val.Get("disable").ToBool()
 	default:
 		iter.ReportError("Url_QueryParam", fmt.Sprintf("invalid Url_QueryParam key value, original type: %d", val.ValueType()))
 	}
 }
 
 func (codec *UrlQueryParamCodec) IsEmpty(ptr unsafe.Pointer) bool {
-	e := (*Description)(ptr)
+	e := (*Url_QueryParam)(ptr)
 	return e == nil
 }
 
 func (codec *UrlQueryParamCodec) Encode(ptr unsafe.Pointer, stream *jsoniter.Stream) {
-	e := (*Url_QueryParam)(ptr)
-	if len(e.Key) > 0 {
+	param := (*Url_QueryParam)(ptr)
+	if len(param.Key) > 0 {
 		stream.WriteObjectStart()
 		stream.WriteObjectField("key")
-		stream.WriteString(e.Key)
+		stream.WriteString(param.Key)
 		stream.WriteObjectField("value")
-		stream.WriteString(e.Value)
+		stream.WriteString(param.Value)
 		stream.WriteObjectField("disable")
-		stream.WriteBool(e.Disable)
+		stream.WriteBool(param.Disable)
 		stream.WriteObjectEnd()
 	} else {
-		stream.WriteString(e.Value)
+		stream.WriteString(param.Value)
 	}
 }

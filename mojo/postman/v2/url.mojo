@@ -1,12 +1,12 @@
 
-/// If object, contains the complete broken-down URL for this request. If string, contains the literal request URL.
+/// Url If object, contains the complete broken-down URL for this request. If string, contains the literal request URL.
 type Url {
     type QueryParam {
         key: String @1
 
         value: String @2
 
-        /// If set to true, the current query parameter will not be sent with the request
+        /// If set to true, the current query parameter will not be sent with the request.
         disable: Bool @5
 
         description: Description @10
@@ -16,7 +16,7 @@ type Url {
     /// host, path, hash, query parameter(s) and path variable(s).
     raw: String @1
 
-    /// The protocol associated with the request, E.g: 'http'
+    /// The protocol associated with the request, E.g: 'http'.
     protocol: String @10
 
     /// The host for the URL, E.g: api.yourdomain.com.
@@ -32,8 +32,8 @@ type Url {
     port: String @20
 
     /// An array of QueryParams, which is basically the query string part of the URL,
-    /// parsed into separate variables
-    query: QueryParam @21
+    /// parsed into separate variables.
+    query: [QueryParam] @21
 
     /// Contains the URL fragment (if any). Usually this is not transmitted over the network,
     /// but it could be useful to store this in some cases.

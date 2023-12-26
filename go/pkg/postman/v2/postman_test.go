@@ -8,11 +8,20 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
-//go:embed testdata/collection.json
-var col1 []byte
+var (
+	//go:embed testdata/collection.json
+	col []byte
+	//go:embed testdata/quiz.json
+	quiz []byte
+)
 
 func TestParsePostman(t *testing.T) {
-	col := &Collection{}
-	err := jsoniter.Unmarshal(col1, &col)
-	assert.NoError(t, err)
+	test := func(file []byte) {
+		col := &Collection{}
+		err := jsoniter.Unmarshal(file, &col)
+		assert.NoError(t, err)
+	}
+
+	test(col)
+	test(quiz)
 }

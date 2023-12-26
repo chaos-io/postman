@@ -15,7 +15,7 @@ type Response {
 
     /// No HTTP request is complete without its headers, and the same is true for
     /// a Postman request. This field is an array containing all the headers.
-    header: [String] @20
+    header: [Header] @20
 
     //cookie: [Cookie] @21
 

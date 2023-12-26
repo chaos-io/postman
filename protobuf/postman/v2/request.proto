@@ -6,6 +6,7 @@ package postman.v2;
 
 import "mojo/core/value.proto";
 import "postman/v2/description.proto";
+import "postman/v2/header.proto";
 import "postman/v2/url.proto";
 
 option go_package = "github.com/chaos-io/postman/go/pkg/postman/v2;postman";
@@ -30,18 +31,11 @@ message Request {
         string passphrase = 15;
     }
 
-    message Header {
-        string key = 1;
-        string value = 2;
-        bool disable = 5;
-        Description description = 10;
-    }
-
     message Body {
         string mode = 1;
         string raw = 5;
         mojo.core.Object graphql = 6;
-        Request.UrlEncodedParameter urlencoded = 10;
+        repeated Request.UrlEncodedParameter urlencoded = 10;
         Request.FormParameter formdata = 15;
         Request.File file = 20;
         mojo.core.Object options = 25;
@@ -73,5 +67,5 @@ message Request {
     string method = 21;
     Description description = 22;
     repeated Header header = 25;
-    repeated Body body = 30;
+    Body body = 30;
 }

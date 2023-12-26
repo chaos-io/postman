@@ -1,18 +1,21 @@
 {
     "title": "postman.v2.Event",
-    "description": "",
+    "description": "Event Postman allows you to configure scripts to run when specific events occur.\nThese scripts are stored here, and can be referenced in the collection by their ID.",
     "type": "object",
     "properties": {
         "disabled": {
             "title": "mojo.core.Bool",
+            "description": "Indicates whether the event is disabled. If absent, the event is assumed to be enabled.",
             "type": "boolean"
         },
         "id": {
             "title": "mojo.core.String",
+            "description": "A unique identifier for the enclosing event",
             "type": "string"
         },
         "listen": {
             "title": "mojo.core.String",
+            "description": "Can be set to test or prerequest for test scripts or pre-request scripts respectively.",
             "type": "string"
         },
         "script": {

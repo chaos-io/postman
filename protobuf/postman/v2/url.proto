@@ -25,7 +25,7 @@ message Url {
     repeated string host = 15;
     repeated string path = 18;
     string port = 20;
-    QueryParam query = 21;
+    repeated QueryParam query = 21;
     string hash = 22;
     repeated Variable variable = 30;
 }

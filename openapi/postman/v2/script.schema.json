@@ -1,18 +1,24 @@
 {
     "title": "postman.v2.Script",
-    "description": "",
+    "description": "Script A script is a snippet of Javascript code that can be used to to perform setup\nor teardown operations on a particular response.",
     "type": "object",
     "properties": {
         "exec": {
-            "title": "mojo.core.String",
-            "type": "string"
+            "title": "mojo.core.Array",
+            "type": "array",
+            "items": {
+                "title": "mojo.core.String",
+                "type": "string"
+            }
         },
         "id": {
             "title": "mojo.core.String",
+            "description": "A unique, user defined identifier that can be used to refer to this script from requests.",
             "type": "string"
         },
         "name": {
             "title": "mojo.core.String",
+            "description": "Script name",
             "type": "string"
         },
         "src": {
@@ -20,6 +26,7 @@
         },
         "type": {
             "title": "mojo.core.String",
+            "description": "Type of the script. E.g: 'text/javascript'",
             "type": "string"
         }
     }

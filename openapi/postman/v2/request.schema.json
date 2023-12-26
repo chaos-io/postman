@@ -4,12 +4,7 @@
     "type": "object",
     "properties": {
         "body": {
-            "title": "mojo.core.Array",
-            "description": "This field contains the data usually contained in the request body.",
-            "type": "array",
-            "items": {
-                "$ref": "#/components/schemas/postman.v2.Request.Body"
-            }
+            "$ref": "#/components/schemas/postman.v2.Request.Body"
         },
         "description": {
             "$ref": "#/components/schemas/postman.v2.Description"
@@ -19,7 +14,7 @@
             "description": "A representation for a list of headers",
             "type": "array",
             "items": {
-                "$ref": "#/components/schemas/postman.v2.Request.Header"
+                "$ref": "#/components/schemas/postman.v2.Header"
             }
         },
         "method": {
