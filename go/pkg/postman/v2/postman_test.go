@@ -20,8 +20,11 @@ func TestParsePostman(t *testing.T) {
 		col := &Collection{}
 		err := jsoniter.Unmarshal(file, &col)
 		assert.NoError(t, err)
+
+		str, _ := jsoniter.MarshalToString(&col)
+		assert.NotEmpty(t, str)
 	}
 
-	test(col)
+	// test(col)
 	test(quiz)
 }

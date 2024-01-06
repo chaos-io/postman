@@ -8,7 +8,6 @@ import (
 )
 
 func TestUrlQueryParamCodec_Decode(t *testing.T) {
-
 	codec := &Url_QueryParam{
 		Key:         "foo",
 		Value:       "bar",
